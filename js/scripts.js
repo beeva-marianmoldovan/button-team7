@@ -17,7 +17,8 @@ $( document ).ready(function() {
       $('#right').addClass(style);
     }
 
-    setStyle('amarillo');
+    var color = location.search.split('color=')[1]
+    setStyle(color);
 
 
 });
