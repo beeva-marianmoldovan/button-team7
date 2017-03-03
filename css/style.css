@@ -1,6 +1,57 @@
 body, html {
-  margin: 0;
-  padding: 0;
-  height:100%;
-  width:100%;
+  font-family: 'Montserrat';
+}
+
+.container {
+  position: fixed;
+	top: 0; bottom: 0;
+  margin: 50px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
+
+h1 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 50px;
+  font-size: 6em;
+  color: #FFF;
+  line-height: 1em;
+  text-shadow: 0px 3px 6px rgba(150, 150, 150, 1);
+}
+
+#top, #bottom, #left, #right {
+	position: fixed;
+	}
+	#left, #right {
+		top: 0; bottom: 0;
+		width: 50px;
+		}
+		#left { left: 0; }
+		#right { right: 0; }
+
+	#top, #bottom {
+		left: 0; right: 0;
+		height: 50px;
+		}
+		#top { top: 0; }
+		#bottom { bottom: 0; }
+
+.negro {
+  background-color: #000;
+}
+
+.amarillo {
+  background-color: #FFFF00;
+}
+
+.rojo {
+  background-color: #FF0000;
 }
