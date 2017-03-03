@@ -17,15 +17,14 @@ exports.handler = (event, context, callback) => {
       uri: 'https://c67cac8a2eae1d04f5928b5b1603a36ae49eafede475c07838e278610d7e0a.resindevice.io/content',
       method: 'POST',
       json: {
-      	'content': 'https://beeva-marianmoldovan.github.io/button-team7?color=' + color,
+      	'content': 'https://beeva-marianmoldovan.github.io/button-team7/?color=' + color,
       	'screen': 'Labs.2',
       	'type': 'web'
       }
     };
-    request('http://www.google.com', function (error, response, body) {
-      context.done(err, response);
+    console.log(options);
+    request(options, function (error, response, body) {
+      context.done(error, response);
     });
 
 };
-
-exports.handler({clickType:'Single'}, {}, {})

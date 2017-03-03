@@ -15,6 +15,8 @@ $( document ).ready(function() {
       $('#top').addClass(style);
       $('#bottom').addClass(style);
       $('#right').addClass(style);
+      $('#textito').addClass('textito' + style);
+      $('#fondito').addClass('fondito' + style);
     }
 
     var color = location.search.split('color=')[1]
