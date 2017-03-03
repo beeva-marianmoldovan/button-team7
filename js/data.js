@@ -41,4 +41,8 @@ var data = [
     'negro': 'Estoy hasta las bolas de que me llamen Carlos H',
     'rojo': 'No cuentes conmigo para no hacer chistes'
   }
-]
+];
+
+function random(){
+  return data[Math.floor(Math.random()*data.length)];
+}

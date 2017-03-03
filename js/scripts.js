@@ -1,25 +1,22 @@
 $( document ).ready(function() {
     console.log( "ready!" );
-    var data = [
-      {
-        'nombre': 'Marian C. Moldovan',
-        'foto': 'https://farm6.staticflickr.com/5607/29838407936_5c1199449d_k_d.jpg',
-        'amarillo': '',
-        'rojo': '',
-        'negro': ''
-      }
-    ];
+    console.log(random());
 
     function setStyle(style) {
       $('#left').addClass(style);
       $('#top').addClass(style);
       $('#bottom').addClass(style);
       $('#right').addClass(style);
-      $('#textito').addClass('textito' + style);
-      $('#fondito').addClass('fondito' + style);
     }
 
-    var color = location.search.split('color=')[1]
+    function setData(style){
+      var person = random();
+      $('#textito').text(person[style]);
+      $('#fotito').attr('src', person['foto']);
+    }
+
+    var color = location.search.split('color=')[1];
+    setData(color);
     setStyle(color);
 
 
